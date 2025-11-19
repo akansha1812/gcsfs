@@ -93,6 +93,8 @@ steps:
           cd tessellations/benchmarks/proof-of-concept/microbenchmark/gcsfs
           pip install -r requirements.txt
           python3 main.py 8192_objs_gcs_central1 --benchmark init-source-dataset
+          # TODO: Run the benchmarks in parallel.
+          # TODO: If the metrics are belore threshold, result in failure.
           python3 main.py 8192_objs_gcs_central1 --benchmark delete
           python3 main.py 8192_objs_gcs_central1 --benchmark rename
         "
