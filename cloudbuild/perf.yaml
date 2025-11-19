@@ -130,7 +130,7 @@ timeout: "3600s" # 30 minutes
 options:
   logging: CLOUD_LOGGING_ONLY
   pool:
-    name: "projects/${PROJECT_ID}/locations/us-central1/workerPools/cloud-build-worker-pool"
+    name: "projects/${PROJECT_ID}/locations/us-central1/workerPools/perf-cloud-build-worker-pool"
 
 availableSecrets:
   secretManager:
